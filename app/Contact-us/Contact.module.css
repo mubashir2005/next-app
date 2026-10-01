@@ -1,0 +1,120 @@
+.contactpage {
+  width:100%;
+}
+
+
+/* Header */
+
+.contactheader {
+  background:white;
+  color:black;
+  text-align:center;
+  padding:60px 20px;
+}
+
+
+.contactheader h1 {
+  font-size:45px;
+  color:#ff9900;
+}
+
+
+.contactheader p {
+  font-size:18px;
+}
+
+
+
+/* Main */
+
+.contactcontainer {
+  width:90%;
+  margin:50px auto;
+  display:flex;
+  gap:40px;
+}
+
+
+/* Info */
+
+.contactinfo,
+.contactform {
+
+  flex:1;
+  padding:30px;
+  background:white;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.contactinfo h2,
+.contactform h2 {
+  margin-bottom:20px;
+  color:#ff9900;
+}
+
+
+.contactinfo p {
+  color:#555;
+  line-height:2;
+}
+
+
+
+/* Form */
+
+.contactform input,
+.contactform textarea {
+
+  width:100%;
+  padding:14px;
+  margin-bottom:15px;
+  border:1px solid #ddd;
+  border-radius:8px;
+  outline:none;
+
+}
+
+
+.contactform textarea {
+  height:120px;
+  resize:none;
+}
+
+
+.contactform button {
+
+  width:100%;
+  padding:14px;
+  border:none;
+  background:#ff9900;
+  color:white;
+  border-radius:30px;
+  font-size:16px;
+  cursor:pointer;
+
+}
+
+
+.contactform button:hover {
+  background:#e68a00;
+}
+
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .contactcontainer {
+    flex-direction:column;
+  }
+
+
+  .contactheader h1 {
+    font-size:32px;
+  }
+
+}

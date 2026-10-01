@@ -1,0 +1,98 @@
+.aboutpage {
+  width: 100%;
+}
+
+
+/* Hero Section */
+
+.abouthero {
+  background: white;
+  color:black;
+  padding:70px 20px;
+  text-align:center;
+}
+
+
+.abouthero h1 {
+  font-size:45px;
+  margin-bottom:15px;
+  color: #ff9900;
+}
+
+
+.abouthero p {
+  max-width:700px;
+  margin:auto;
+  font-size:18px;
+  line-height:1.6;
+}
+
+
+
+/* Cards */
+
+.aboutcontent {
+  width:90%;
+  margin:50px auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+
+.aboutcard {
+  padding:30px;
+  background:white;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+
+.aboutcard:hover {
+  transform:translateY(-8px);
+}
+
+
+.aboutcard h2 {
+  color:#ff9900;
+  margin-bottom:15px;
+}
+
+
+.aboutcard p {
+  color:black;
+  line-height:1.7;
+}
+
+
+
+/* Tablet */
+
+@media(max-width:900px){
+
+  .aboutcontent {
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+  .abouthero h1 {
+    font-size:32px;
+  }
+
+  .aboutcontent {
+    grid-template-columns:1fr;
+  }
+
+  .aboutcard {
+    padding:20px;
+  }
+
+}
